@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <title>Href Attribute Example</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/34eb52ac8d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul id="menu">
+            <li id="icon_bar">
+              <i class="fa-solid fa-bars"></i>
+            </li>
+            <li><a href="">home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Streaming</a></li>
+            <li><a href="">Kids</a></li>
+          </ul>
+        </nav>
+        <div class="link-list-btn">
+          <a class="search" href="./page3.html">Search</a>
+          <a href="./page4.html" class="btn2 m-l-2"
+            ><i class="fa-solid fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="fenetre is_hidden">
+      <div class="icon_croix">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <div class="acteurs">
+        <h1>choose your actor</h1>
+        <div>
+          <div id="box"><i class="fa-solid fa-check is_hidden"></i></div>
+
+          <p>acteur1</p>
+        </div>
+        <div>
+          <div id="box"><i class="is_hidden fa-solid fa-check"></i></div>
+
+          <p>acteur2</p>
+        </div>
+        <div>
+          <div id="box"><i class="fa-solid fa-check is_hidden"></i></div>
+
+          <p>acteur3</p>
+        </div>
+        <div>
+          <div id="box"><i class="fa-solid fa-check is_hidden"></i></div>
+
+          <p>acteur4</p>
+        </div>
+        <div>
+          <div id="box"><i class="fa-solid fa-check is_hidden"></i></div>
+
+          <p>acteur5</p>
+        </div>
+        <div>
+          <div id="box">
+            <i class="is_hidden" class="fa-solid fa-check"></i>
+          </div>
+
+          <p>acteur6</p>
+        </div>
+        <div>
+          <div id="box"><i class="fa-solid fa-check is_hidden"></i></div>
+
+          <p>acteur7</p>
+        </div>
+        <div>
+          <div id="box">
+            <i class="is_hidden" class="fa-solid fa-check"></i>
+          </div>
+
+          <p>acteur8</p>
+        </div>
+        <div>
+          <div id="box">
+            <i class="is_hidden" class="fa-solid fa-check"></i>
+          </div>
+
+          <p>acteur9</p>
+        </div>
+        <div>
+          <div id="box">
+            <i class="is_hidden" class="fa-solid fa-check"></i>
+          </div>
+
+          <p>acteur10</p>
+        </div>
+      </div>
+      <button id="actor_search">search</button>
+    </div>
+    <section class="les_films m-t-2">
+      <div class="container">
+        <ul class="films">
+          <li>
+            <a href=".page2.html">
+              <img src="./images/acteur.jpg" />
+              <span class="nom_film">titre du film</span>
+            </a>
+          </li>
+
+          <li>
+            <a href=".page2.html">
+              <img src="./images/acteur.jpg" />
+              <span class="nom_film">titre du film</span>
+            </a>
+          </li>
+
+          <li>
+            <a href=".page2.html">
+              <img src="./images/acteur.jpg" />
+              <span class="nom_film">titre du film</span>
+            </a>
+          </li>
+
+          <li>
+            <a href=".page2.html">
+              <img src="./images/acteur.jpg" />
+              <span class="nom_film">titre du film</span>
+            </a>
+          </li>
+
+          <li>
+            <a href=".page2.html">
+              <img src="./images/acteur.jpg" />
+              <span class="nom_film">titre du film</span>
+            </a>
+          </li>
+
+          <!-- </ul>
+    </div>
+  </section>
+  <section class="les_films">
+    <div class="container">
+      <ul class="films"> -->
+
+          <li>
+            <a href=".page2.html">
+              <img src="./images/acteur.jpg" />
+              <span class="nom_film">titre du film</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script>
+      let boxverif = document.querySelectorAll("#box");
+      let tick = document.querySelectorAll("#box i");
+      let icon_croix = document.querySelector(".icon_croix i");
+      let onglet = document.querySelector(".fenetre");
+      let tripplebar = document.querySelector("#icon_bar");
+      let fenpays = document.querySelector(".acteurs");
+
+      tripplebar.addEventListener("click", function () {
+        onglet.classList.remove("is_hidden");
+      });
+
+      icon_croix.addEventListener("click", function () {
+        onglet.classList.add("is_hidden");
+      });
+
+      boxverif[1].addEventListener("click", function () {
+        console.log("ok");
+        tick[1].classList.remove("is_hidden");
+      });
+    </script>
+  </body>
+</html>
